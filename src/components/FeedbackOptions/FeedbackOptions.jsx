@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './FeedbackOptions.module.css';
 
-function FeedbackOptions({ options, onLeaveFeedback }) {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div className={styles.buttonContainer}>
       {options.map(option => (
@@ -15,6 +15,6 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
       ))}
     </div>
   );
-}
+};
 
 export default FeedbackOptions;

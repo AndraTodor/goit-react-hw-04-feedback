@@ -5,7 +5,7 @@ import Statistics from './Statistics/Statistics';
 import Notification from './Notification/Notification';
 import styles from './app.module.css';
 
-function App() {
+const App = () => {
   const [feedback, setFeedback] = useState({ good: 0, neutral: 0, bad: 0 });
 
   const handleFeedback = type => {
@@ -49,6 +49,6 @@ function App() {
       </Section>
     </div>
   );
-}
+};
 
 export default App;
